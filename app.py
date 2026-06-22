@@ -382,7 +382,8 @@ def homepage():
                  <li>Select Live Trading, not the paper account from the top left.</li>
                  <li>Once logged in, on the right hand side of the main dashboard, halfway down, regerate your API keys.</li>
                  <li>Copy the right keys into the place in the script where it says API_KEY and SECRET_KEY.</li>
-                 <li>Run the script and make sure it stays running.</li>
+                 <li>Run the script and make sure it stays running.
+                   <div class="code-snippet"><pre><code>python3 finance_script.py</pre></code></div></li>
                  <li>Done. Hopefully your balance will go up or down.</li>
               </ol></p>
 
