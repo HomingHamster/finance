@@ -381,7 +381,7 @@ def homepage():
                  <li>Log in.</li>
                  <li>Deposit money, via Crypto or Bank Transfer. You will want $30 or more.</li>
                  <li>Select Live Trading, not Paper Trading, from the top left.</li>
-                 <li>On the right hand side of the main dashboard, halfway down, regerate your API keys.</li>
+                 <li>On the right hand side of the main dashboard, halfway down, regenerate your API keys.</li>
                  <li>Copy the right keys into the place in the script where it says API_KEY and SECRET_KEY.</li>
                  <li>Run the script and make sure it stays running. It will print a line every few seconds saying there is no balance available when the market is closed.
                    <div class="code-snippet"><pre><code>python3 finance_script.py</pre></code></div></li>
