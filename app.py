@@ -411,7 +411,7 @@ def homepage():
           </article>
         </section>
         <div style="margin: 100px; text-align: center">
-          <p class="small"><a href="https://example.com">Green Finance Framework</a> by <a href="https://circuspam.coffee">Felix Farquharson</a> is marked <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/zero.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"></p>
+          <p class="small"><a href="https://github.com/HomingHamster/finance">Green Finance Framework</a> by <a href="https://circuspam.coffee">Felix Farquharson</a> is marked <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/zero.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"></p>
         </div>
       </main>
     </body>
