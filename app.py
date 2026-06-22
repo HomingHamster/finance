@@ -301,6 +301,12 @@ def homepage():
           border-top: 1px solid var(--line);
         }}
 
+        .code-snippet {{
+          background: var(--code-bg);
+          border: 1px solid var(--line);
+        }}
+
+
         pre {{
           margin: 0;
           padding: 20px;
@@ -364,11 +370,24 @@ def homepage():
               <p>
                 The information provided on this platform is for general informational and educational purposes only. It does not constitute, and should not be considered, professional or personal financial advice. Before making any financial or investment decisions, you should consult a licensed financial advisor to assess your specific personal circumstances, financial situation, and objectives.
               </p>
+              <h2>How To Install:</h2>
+              <p><ol>
+                 <li>Open a terminal window with python installed, and run this:
+                   <div class="code-snippet"><pre><code>pip install requests alpaca-py</pre></code></div></li>
+                 <li>Save the code in the textbox below into a file called something like "finance_script.py"</li>
+                 <li>Sign up for <a href="https://alpaca.markets">Alpaca Markets</a>, and get your ID approved.</li>
+                 <li>Deposit money, via Crypto or Bank Transfer. You will want $30 or more.</li> 
+                 <li>Select Live Trading, not the paper account from the top left.</li>
+                 <li>Once logged in, on the right hand side of the main dashboard, halfway down, regerate your API keys.</li>
+                 <li>Copy the right keys into the place in the script where it says API_KEY and SECRET_KEY.</li>
+                 <li>Run the script and make sure it stays running.</li>
+                 <li>Done. Hopefully your balance will go up or down.</li>
+              </ol></p>
+
               <h2 style="margin-top: 1em">Consumer script</h2>
               <p>
                 This script allows you to follow my investements yourself, in an automated way. It polls the API on this site, and submits market notional orders to your alpaca account using the account keys you add.
               </p>
-              <div class="code-wrap"><pre><code>pip install requests alpaca-py</pre></code></div>
             </div>
             <div class="code-wrap">
               <pre><code>{escaped_script}</code></pre>
