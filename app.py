@@ -231,6 +231,7 @@ def homepage():
           margin: 0;
           font-size: 18px;
           letter-spacing: -0.02em;
+          margin-top: 1em;
         }}
 
         .card-head p, .card-head li {{
@@ -369,11 +370,14 @@ def homepage():
 
           <article class="card">
             <div class="card-head">
+
               <h2>Not Financial Advice</h2>
               <p>
                 The information provided on this platform is for general informational and educational purposes only. It does not constitute, and should not be considered, professional or personal financial advice. Before making any financial or investment decisions, you should consult a licensed financial advisor to assess your specific personal circumstances, financial situation, and objectives.
               </p>
-              <h2 style="margin-top: 1em">How To Install</h2>
+
+
+              <h2>How To Install</h2>
               <p><ol>
                  <li>Open a terminal window with python installed, and run this:
                    <div class="code-snippet"><pre><code>pip install requests alpaca-py</pre></code></div></li>
@@ -389,7 +393,7 @@ def homepage():
                  <li>Done. Hopefully your balance will go up or down.</li>
               </ol></p>
 
-              <h2 style="margin-top: 1em">Consumer script</h2>
+              <h2>Consumer script</h2>
               <p>
                 This script allows you to follow my investements yourself, in an automated way. It polls the API on this site, and submits market notional orders to your alpaca account using the account keys you add.
               </p>
