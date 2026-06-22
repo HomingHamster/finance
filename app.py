@@ -377,7 +377,7 @@ def homepage():
                  <li>Open a terminal window with python installed, and run this:
                    <div class="code-snippet"><pre><code>pip install requests alpaca-py</pre></code></div></li>
                  <li>Save the code in the textbox below into a file called something like "finance_script.py".</li>
-                 <li>Sign up for <a href="https://alpaca.markets">Alpaca Markets</a>, and get your ID approved.</li>
+                 <li>Sign up for a "Trading API" account on <a href="https://alpaca.markets">Alpaca Markets</a>, and get your ID approved.</li>
                  <li>Log in.</li>
                  <li>Deposit money, via Crypto or Bank Transfer. You will want $30 or more.</li>
                  <li>Select Live Trading, not the paper account, from the top left.</li>
