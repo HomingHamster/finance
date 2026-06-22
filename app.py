@@ -195,7 +195,6 @@ def homepage():
 
         .lead {{
           margin: 0;
-          max-width: 62ch;
           color: var(--muted);
           font-size: 17px;
         }}
