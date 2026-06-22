@@ -83,7 +83,8 @@ def rebalance_once():
 
         side = OrderSide.BUY if diff > 0 else OrderSide.SELL
         submit_notional_order(symbol, side, notional)
-        print(f"{side.value.upper():4} {symbol} ${notional:.2f} drift={diff:+.4f}")
+        print(f"{side.value.upper():4} {symbol} ${notional:.2f} "
+              f"drift={diff:+.4f}")
 
 
 if __name__ == "__main__":
