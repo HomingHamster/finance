@@ -232,7 +232,7 @@ def homepage():
           letter-spacing: -0.02em;
         }}
 
-        .card-head p {{
+        .card-head p, .card-head li {{
           margin: 6px 0 0;
           color: var(--muted);
           font-size: 14px;
@@ -370,11 +370,11 @@ def homepage():
               <p>
                 The information provided on this platform is for general informational and educational purposes only. It does not constitute, and should not be considered, professional or personal financial advice. Before making any financial or investment decisions, you should consult a licensed financial advisor to assess your specific personal circumstances, financial situation, and objectives.
               </p>
-              <h2>How To Install:</h2>
+              <h2 style="margin-top: 1em">How To Install</h2>
               <p><ol>
                  <li>Open a terminal window with python installed, and run this:
                    <div class="code-snippet"><pre><code>pip install requests alpaca-py</pre></code></div></li>
-                 <li>Save the code in the textbox below into a file called something like "finance_script.py"</li>
+                 <li>Save the code in the textbox below into a file called something like "finance_script.py".</li>
                  <li>Sign up for <a href="https://alpaca.markets">Alpaca Markets</a>, and get your ID approved.</li>
                  <li>Deposit money, via Crypto or Bank Transfer. You will want $30 or more.</li> 
                  <li>Select Live Trading, not the paper account from the top left.</li>
