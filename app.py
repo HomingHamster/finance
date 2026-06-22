@@ -323,10 +323,9 @@ def homepage():
     <body>
       <main class="wrap">
         <section class="hero">
-          <div class="eyebrow">Test Project</div>
-          <br>
+          <div style="padding-bottom: 1em;" class="eyebrow">Test Project</div>
           <h1>Target weights example.</h1>
-          <p class="lead">
+          <p style="padding-bottom: 1em;" class="lead">
             A minimal homepage for viewing my current target weights and a compact consumer script that polls
             <a class="api-link" href="/api">/api</a> and rebalances only when portfolio drift exceeds {drift:.2%}.
             Later, this project will likely focus on green stocks and smaller businesses, but it does not at
