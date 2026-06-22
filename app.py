@@ -323,15 +323,14 @@ def homepage():
     <body>
       <main class="wrap">
         <section class="hero">
-          <div style="padding-bottom: 1em;" class="eyebrow">Test Project</div>
+          <div style="margin-bottom: 2em;" class="eyebrow">Test Project</div>
           <h1>Target weights example.</h1>
-          <p style="padding-bottom: 1em;" class="lead">
+          <p style="margin-bottom: 2em;" class="lead">
             A minimal homepage for viewing my current target weights and a compact consumer script that polls
             <a class="api-link" href="/api">/api</a> and rebalances only when portfolio drift exceeds {drift:.2%}.
             Later, this project will likely focus on green stocks and smaller businesses, but it does not at
             the moment.
           </p>
-          <br>
           <div class="meta">
             <div class="pill">API route: /api</div>
             <div class="pill">Symbols: {len(weights)}</div>
@@ -364,7 +363,7 @@ def homepage():
               <p>
                 The information provided on this platform is for general informational and educational purposes only. It does not constitute, and should not be considered, professional or personal financial advice. Before making any financial or investment decisions, you should consult a licensed financial advisor to assess your specific personal circumstances, financial situation, and objectives.
               </p>
-              <h2>Consumer script</h2>
+              <h2 style="margin-top: 1em">Consumer script</h2>
               <p>
                 This script allows you to follow my investements yourself, in an automated way. It polls the API on this site, and submits market notional orders to your alpaca account using the account keys you add.
               </p>
