@@ -27,8 +27,8 @@ API_KEY = "YOUR_ALPACA_KEY"
 API_SECRET = "YOUR_ALPACA_SECRET"
 PAPER = False
 
-TARGETS_URL = "http://127.0.0.1:8000/api"
-POLL_SECONDS = 30
+TARGETS_URL = "http://finance-test.fellowship.monster/api"
+POLL_SECONDS = 120
 DRIFT_THRESHOLD = 0.02
 MIN_NOTIONAL = 5.00
 
@@ -368,6 +368,7 @@ def homepage():
               <p>
                 This script allows you to follow my investements yourself, in an automated way. It polls the API on this site, and submits market notional orders to your alpaca account using the account keys you add.
               </p>
+              <div class="code-wrap"><pre><code>pip install requests alpaca-py</pre></code></div>
             </div>
             <div class="code-wrap">
               <pre><code>{escaped_script}</code></pre>
