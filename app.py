@@ -4,7 +4,7 @@ import json
 import html
 
 app = FastAPI()
-JSON_PATH = "rebalance_plan2.json"
+JSON_PATH = "/app/rebal/rebalance_plan2.json"
 
 
 def load_data():
