@@ -323,7 +323,7 @@ def homepage():
     <body>
       <main class="wrap">
         <section class="hero">
-          <div style="margin-bottom: 2em;" class="eyebrow">Test Project</div>
+          <div style="margin-bottom: 3em;" class="eyebrow">Test Project</div>
           <h1>Target weights example.</h1>
           <p style="margin-bottom: 2em;" class="lead">
             A minimal homepage for viewing my current target weights and a compact consumer script that polls
