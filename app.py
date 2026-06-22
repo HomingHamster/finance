@@ -122,6 +122,7 @@ def homepage():
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Target Weights API</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
       <style>
         :root {{
           --bg: #f3f5f1;
@@ -382,7 +383,7 @@ def homepage():
                  <li>Deposit money, via Crypto or Bank Transfer. You will want $30 or more.</li>
                  <li>Select Live Trading, not Paper Trading, from the top left.</li>
                  <li>On the right hand side of the main dashboard, halfway down, regenerate your API keys.</li>
-                 <li>Copy the right keys into the place in the script where it says API_KEY and SECRET_KEY.</li>
+                 <li>Copy the keys into the places in the script where it says API_KEY and SECRET_KEY.</li>
                  <li>Run the script and make sure it stays running. It will print a line every few seconds saying there is no balance available when the market is closed.
                    <div class="code-snippet"><pre><code>python3 finance_script.py</pre></code></div></li>
                  <li>Done. Hopefully your balance will go up or down.</li>
