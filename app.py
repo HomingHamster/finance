@@ -395,7 +395,7 @@ def homepage():
                  <li>On the right hand side of the main dashboard, halfway down, regenerate your API keys. They will be for Live Trading if you are in Live Trading mode, or Paper Trading, if you are in Paper Trading mode.</li>
                  <li>Copy the keys into the places in the script where it says API_KEY and SECRET_KEY.</li>
                  <li>Check the PAPER setting is set to match your API keys. By default it is False for Live Trading.</li>
-                 <li>Run the script and make sure it stays running. It will print a line every few seconds saying there is no balance available when the market is closed.
+                 <li>Run the script and make sure it stays running. It will print a line every two minutes saying the market is closed when the market is closed.
                    <div class="code-snippet"><pre><code>python3 finance_script.py</pre></code></div></li>
                  <li>Done. Hopefully your balance will go up or down.</li>
               </ol></p>
