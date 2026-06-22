@@ -89,10 +89,16 @@ def rebalance_once():
 
 if __name__ == "__main__":
     while True:
-        try:
-            rebalance_once()
-        except Exception as e:
-            print("error:", e)
+        clock = client.get_clock()
+
+	if clock.is_open:
+            try:
+                rebalance_once()
+            except Exception as e:
+                print("error:", e)
+        else:
+            print("Market is closed.")
+
         time.sleep(POLL_SECONDS)
 '''
 
@@ -384,10 +390,11 @@ def homepage():
                  <li>Save the code in the textbox below into a file called something like "finance_script.py".</li>
                  <li>Sign up for a "Trading API" account on <a href="https://alpaca.markets">Alpaca Markets</a>, and get your ID approved.</li>
                  <li>Log in.</li>
-                 <li>Deposit money, via Crypto or Bank Transfer. You will want $30 or more.</li>
                  <li>Select Live Trading, not Paper Trading, from the top left.</li>
-                 <li>On the right hand side of the main dashboard, halfway down, regenerate your API keys.</li>
+                 <li>Deposit money, via Crypto or Bank Transfer. You will want $30 or more. You can do this with the Funds & Wallet menu item which is on the left when in Live Trading mode.</li>
+                 <li>On the right hand side of the main dashboard, halfway down, regenerate your API keys. They will be for Live Trading if you are in Live Trading mode, or Paper Trading, if you are in Paper Trading mode.</li>
                  <li>Copy the keys into the places in the script where it says API_KEY and SECRET_KEY.</li>
+                 <li>Check the PAPER setting is set to match your API keys. By default it is False for Live Trading.</li>
                  <li>Run the script and make sure it stays running. It will print a line every few seconds saying there is no balance available when the market is closed.
                    <div class="code-snippet"><pre><code>python3 finance_script.py</pre></code></div></li>
                  <li>Done. Hopefully your balance will go up or down.</li>
