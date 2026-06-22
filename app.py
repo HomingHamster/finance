@@ -324,6 +324,7 @@ def homepage():
       <main class="wrap">
         <section class="hero">
           <div class="eyebrow">Test Project</div>
+          <br>
           <h1>Target weights example.</h1>
           <p class="lead">
             A minimal homepage for viewing my current target weights and a compact consumer script that polls
@@ -331,9 +332,9 @@ def homepage():
             Later, this project will likely focus on green stocks and smaller businesses, but it does not at
             the moment.
           </p>
+          <br>
           <div class="meta">
             <div class="pill">API route: /api</div>
-            <div class="pill">Drift threshold: {drift:.2%}</div>
             <div class="pill">Symbols: {len(weights)}</div>
           </div>
         </section>
@@ -342,7 +343,6 @@ def homepage():
           <article class="card">
             <div class="card-head">
               <h2>Current targets</h2>
-              <p>Read directly from the local rebalance plan.</p>
             </div>
             <div class="pad">
               <table>
