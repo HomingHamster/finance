@@ -324,11 +324,13 @@ def homepage():
     <body>
       <main class="wrap">
         <section class="hero">
-          <div class="eyebrow">FastAPI + Alpaca</div>
-          <h1>Target weights, served simply.</h1>
+          <div class="eyebrow">Test Project</div>
+          <h1>Target weights example.</h1>
           <p class="lead">
-            A minimal homepage for viewing current target weights and a compact consumer script that polls
+            A minimal homepage for viewing my current target weights and a compact consumer script that polls
             <a class="api-link" href="/api">/api</a> and rebalances only when portfolio drift exceeds {drift:.2%}.
+            Later, this project will likely focus on green stocks and smaller businesses, but it does not at
+            the moment.
           </p>
           <div class="meta">
             <div class="pill">API route: /api</div>
@@ -360,10 +362,13 @@ def homepage():
 
           <article class="card">
             <div class="card-head">
+              <h2>Not Financial Advice</h2>
+              <p>
+                The information provided on this platform is for general informational and educational purposes only. It does not constitute, and should not be considered, professional or personal financial advice. Before making any financial or investment decisions, you should consult a licensed financial advisor to assess your specific personal circumstances, financial situation, and objectives.
+              </p>
               <h2>Consumer script</h2>
               <p>
-                Polls the API, compares live Alpaca weights to targets, and submits market notional orders only
-                when drift is greater than 2%.
+                This script allows you to follow my investements yourself, in an automated way. It polls the API on this site, and submits market notional orders to your alpaca account using the account keys you add.
               </p>
             </div>
             <div class="code-wrap">
@@ -372,7 +377,7 @@ def homepage():
           </article>
         </section>
 
-        <p class="small">The current target set contains CAT, SMCI, UPS, and ABBV.</p>
+        <p class="small"><a href="https://example.com">Untitled</a> by <a href="https://example.com">Jane Doe</a> is marked <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/zero.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"></p>
       </main>
     </body>
     </html>
