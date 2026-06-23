@@ -387,7 +387,7 @@ def homepage():
               <p><ol>
                  <li>Open a terminal window with python installed, and run this:
                    <div class="code-snippet"><pre><code>pip install requests alpaca-py</pre></code></div></li>
-                 <li>Save the script below into a file called something like "finance_script.py". Running the code will use this name.</li>
+                 <li>Save the script below into a file called something like "finance_script.py". When we run the code later we will use this name.</li>
                  <li>Sign up for a "Trading API" account on <a href="https://alpaca.markets">Alpaca Markets</a>, and get your ID approved.</li>
                  <li>Log in.</li>
                  <li>Select Live Trading, not Paper Trading, from the top left.</li>
