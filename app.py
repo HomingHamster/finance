@@ -406,8 +406,8 @@ def homepage():
                 <li>Save the script below into a file called something like "finance_script.py". When we run the code, we will use this name.</li>
                 <li>Open a terminal window with <a href="https://python.org">Python</a> installed, and run the following <a href="https://pypi.org/project/pip/">pip</a> install command 
                   (pip usually comes bundled with Python by default): <div class="code-snippet"><pre><code>pip install requests alpaca-py</pre></code></div></li>
-                <li>Use this command below to run the script. You should make sure it stays running the entire time that you want your portfolio rebalanced automatically according to the ticker weights
-                  provided on this site. When the market is closed the script will print a line to your terminal window every two minutes, saying the market is closed.
+                <li>Run this next command below to start the rebalancing script. You should make sure it stays running the entire time that you want your portfolio rebalanced (if your computer sleeps,
+                  the script will not actively reblance your portfolio). When the market is closed the script will print a line to your terminal window every two minutes, saying the market is closed.
                   <div class="code-snippet"><pre><code>python3 finance_script.py</pre></code></div>
                 </li>
                 <li>Once you get to the point of withdrawing your funds again, you might want to know the following things:
