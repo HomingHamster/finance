@@ -393,10 +393,8 @@ def homepage():
               <h2>How To Install</h2>
               <p>Please read fully before using this script.</p>
               <p><ol>
-                <li>Open a terminal window with python installed, and run this:
-                  <div class="code-snippet"><pre><code>pip install requests alpaca-py</pre></code></div></li>
-                <li>Save the script below into a file called something like "finance_script.py". When we run the code later, we will use this name.</li>
-                <li>Sign up for a "Trading API" account on <a href="https://alpaca.markets">Alpaca Markets</a>, and get your ID approved.</li>
+                <li>Sign up for a "Trading API" account on <a href="https://alpaca.markets">Alpaca Markets</a>, and get your ID approved. This is a trading broker that will allow you to
+                  invest and control it using an API, with free sign up.</li>
                 <li>Log in.</li>
                 <li>Select Live Trading, not Paper Trading, from the top left.</li>
                 <li>Deposit money, via Crypto or Bank Transfer. You will likely want ~$30 or more. You can add funds with the Funds & Wallet menu item which is on the left of the Alpaca website when in Live
@@ -405,8 +403,11 @@ def homepage():
                 <li>Copy the keys into the places in the script where it says to configure API_KEY and SECRET_KEY.</li>
                 <li>Check the PAPER setting in the script is set to match your if API keys are for Paper Trading or Live Trading. By default the PAPER variable is False, for Live Trading mode (with real money),
                   not Paper Trading (with fake money).</li>
-                <li>Run the script, and make sure it stays running the enitre time that you want your portfolio rebalanced automatically according to the ticker weights provided here. It will print a line every two minutes saying
-                  the market is closed when the market is closed.
+                <li>Save the script below into a file called something like "finance_script.py". When we run the code later, we will use this name.</li>
+                <li>Open a terminal window with python installed, and run this:
+                  <div class="code-snippet"><pre><code>pip install requests alpaca-py</pre></code></div></li>
+                <li>Use the command below to run the script, and make sure it stays running the enitre time that you want your portfolio rebalanced automatically according to the ticker weights 
+                  provided here. It will print a line every two minutes saying the market is closed when the market is closed.
                   <div class="code-snippet"><pre><code>python3 finance_script.py</pre></code></div>
                 </li>
                 <li>Once you get to the point of withdrawing your funds again, you might want to know the following things:
