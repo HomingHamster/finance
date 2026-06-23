@@ -410,14 +410,13 @@ def homepage():
                 </li>
                 <li>Once you get to the point of withdrawing your funds again, you might want to know the following things:
                   <ul>
-                    <li>There are different lengths of waiting time for stock sales to settle</li>
-                    <li>Then there is sometimes a waiting time for withdrawals as well.
                     <li>Once you have stopped the script you need to manually liquidate the stocks you have invested in. You can do this using the little (X) button on the right hand side of the Position section of the Dashboard.
-                    <li>You will usually have to wait to sell the stock when the market is open.</li>
-                    <li>Withdrawing bitcoin can be faster, once it has settled. You can buy BTCUSD and then you can action a Bitcoin withdrawal (which is the quickest way, once you have an approved reusable 
-                      bitcoin address registered).</li>
-                    <li>Adding a new bitcoin address requires a 24h security hold.</li>
-                    <li>You should plan for around 3+ days for withdrawals, and you might need to check more than once.</li>
+                    <li>You will often have to wait for the regular market opening hours to sell the stock.</li>
+                    <li>There is a waiting time for a stock sale to settle once you have sold it, before it can be withdrawn.</li>
+                    <li>Then there is sometimes a waiting time for withdrawals to clear into your bank as well.</li>
+                    <li>Withdrawing bitcoin can be faster, once your address is already added and cleared. You can do this by buying BTCUSD. You can then action a Bitcoin withdrawal using the left hand menu under Funds & Wallet.</li>
+                    <li>Adding a new bitcoin address requires a 24h Crypto withdrawals security hold.</li>
+                    <li>You should plan for around 3+ days for making withdrawals, and you might need to check more than once.</li>
                   </ul>
                 </li>
                 <li>Done. Hopefully your balance will go up or down.</li>
