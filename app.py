@@ -93,7 +93,7 @@ if __name__ == "__main__":
     while True:
         clock = client.get_clock()
 
-	if clock.is_open:
+        if clock.is_open:
             try:
                 rebalance_once()
             except Exception as e:
