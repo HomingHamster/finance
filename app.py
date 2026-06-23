@@ -63,6 +63,16 @@ def submit_notional_order(symbol, side, notional):
     return client.submit_order(order_data=order)
 
 
+def submit_qty_order(symbol, side, qty):
+    order = MarketOrderRequest(
+        symbol=symbol,
+        qty=round(qty, 9),
+        side=side,
+        time_in_force=TimeInForce.DAY,
+    )
+    return client.submit_order(order_data=order)
+
+
 def rebalance_once():
     target_weights = get_target_weights()
     equity, positions = get_equity_and_positions()
@@ -84,9 +94,29 @@ def rebalance_once():
             continue
 
         side = OrderSide.BUY if diff > 0 else OrderSide.SELL
-        submit_notional_order(symbol, side, notional)
-        print(f"{side.value.upper():4} {symbol} ${notional:.2f} "
-              f"drift={diff:+.4f}")
+
+        if side == OrderSide.BUY:
+            submit_notional_order(symbol, side, notional)
+            print(f"{side.value.upper():4} {symbol} ${notional:.2f} "
+                  f"drift={diff:+.4f}")
+        else:
+            pos = client.get_open_position(symbol)
+            current_price = float(pos.current_price)
+            qty_available = float(pos.qty_available)
+
+            if current_price <= 0 or qty_available <= 0:
+                continue
+
+            desired_qty = notional / current_price
+            sell_qty = min(desired_qty, qty_available)
+            sell_qty = round(sell_qty, 9)
+
+            if sell_qty <= 0:
+                continue
+
+            submit_qty_order(symbol, side, sell_qty)
+            print(f"{side.value.upper():4} {symbol} qty={sell_qty:.9f} "
+                  f"drift={diff:+.4f}")
 
 
 if __name__ == "__main__":
