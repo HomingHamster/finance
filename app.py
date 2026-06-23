@@ -426,7 +426,7 @@ def homepage():
               <p><small>Running the ingestion script that provides the ticker weights here costs about $2.50 a day, you can donate; but only if it actually makes you feel better.
                 You are encourged to avoid donating if you aren't sure that you want to: <a href="https://circuspam.coffee/tips">Circuspam Tips</a>.</small></p>
 
-              <h2>Consumer script</h2>
+              <h2>Consumer Script</h2>
               <p>
                 This script allows you to view and follow my personal investements yourself, in an automated way (subject to potential change, this is a test). It polls the API on this site,
                 and it submits market orders to rebalence your entire alpaca account balance using your own account keys that you add for the Alpaca Markets Trading API (which am unaffiliated with).
