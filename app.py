@@ -414,7 +414,8 @@ def homepage():
                     <li>You will often have to wait for the regular market opening hours to sell the stock.</li>
                     <li>There is a waiting time for a stock sale to settle once you have sold it, before it can be withdrawn.</li>
                     <li>Then there is sometimes a waiting time for withdrawals to clear into your bank as well.</li>
-                    <li>Withdrawing Bitcoin can be faster, once your address is already added and cleared. You can do this by buying BTCUSD. You can then action a Bitcoin withdrawal using the left hand menu under Funds & Wallet.</li>
+                    <li>Withdrawing Bitcoin can be faster, once your address is already added and cleared. You can do this by buying the BTC/USD ticker, you can then action a Bitcoin withdrawal using the left hand 
+                      menu under Funds & Wallet.</li>
                     <li>Adding a new bitcoin address requires a 24h Crypto withdrawals security hold.</li>
                     <li>You should plan for around 3+ days for making withdrawals, and you might need to check more than once.</li>
                   </ul>
