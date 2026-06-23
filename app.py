@@ -329,7 +329,7 @@ def homepage():
         }}
 
         .code-snippet pre {{
-          padding: 0.7em;
+          padding: 0.6em;
         }}
 
         code {{
