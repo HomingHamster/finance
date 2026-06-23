@@ -442,7 +442,7 @@ def homepage():
                 <li>Run this next command below to start the rebalancing script. You should make sure the script stays actively running the entire time that you want your portfolio rebalanced, if your computer sleeps
                   the script will not actively reblance your portfolio.
                   <div class="code-snippet"><pre><code>python3 finance_script.py</pre></code></div>
-                  When the market is closed the script will print a line to your terminal window every two minutes, saying the market is closed.
+                  When the market is open, the bot will print out which trades it is making on your screen. When the market is closed the script will print a line to your terminal window every two minutes, saying the market is closed.
                 </li>
                 <li>Once you get to the point of withdrawing your funds again, you might want to know the following things:
                   <ul>
