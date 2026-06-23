@@ -316,6 +316,7 @@ def homepage():
           border: 1px solid var(--line);
           width: fit-content;
           margin: 0.5em;
+          padding: 0.3em;
         }}
 
 
