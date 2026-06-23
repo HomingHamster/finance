@@ -397,7 +397,7 @@ def homepage():
                   invest and then control your investment using an API, with free sign up.</li>
                 <li>Log in.</li>
                 <li>Select Live Trading mode (with real money), not Paper Trading mode (with fake money). Do this using the dropdown selector in the top left, so you can make a real cash deposit. You can
-                  just test how the script works using Paper Trading mode if you want to.</li>
+                  test how the script works using just Paper Trading mode if you want to.</li>
                 <li>Deposit money, via Crypto or Bank Transfer. You will likely want ~$30 or more. You can add funds with the Funds & Wallet menu item which is on the left of the Alpaca website when in Live
                   Trading mode. Remember there are fees for deposits, trades, and withdrawals.</li>
                 <li>On the right-hand side of the main dashboard page, halfway down, regenerate your API keys. They will be generated for Live Trading if you are in Live Trading mode when you generate them,
