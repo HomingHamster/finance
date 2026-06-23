@@ -329,9 +329,9 @@ def homepage():
           color: #1d2d21;
         }}
 
-        .code-snippet pre {
+        .code-snippet pre {{
           padding: 0.3em;
-        }
+        }}
 
         code {{
           font-family: var(--mono);
