@@ -315,9 +315,8 @@ def homepage():
           background: var(--code-bg);
           border: 1px solid var(--line);
           width: fit-content;
-          margin: 0 0.7em;
+          margin: 0.7em 0 0.7em 0;
         }}
-
 
         pre {{
           margin: 0;
