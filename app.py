@@ -399,24 +399,24 @@ def homepage():
                 <li>Select Live Trading, not Paper Trading, from the top left.</li>
                 <li>Deposit money, via Crypto or Bank Transfer. You will likely want ~$30 or more. You can add funds with the Funds & Wallet menu item which is on the left of the Alpaca website when in Live
                   Trading mode. Remember there are fees for deposits, trades, and withdrawals.</li>
-                <li>On the right hand side of the main dashboard page, halfway down, regenerate your API keys. They will be for Live Trading if you are in Live Trading mode, or Paper Trading, if you are in Paper Trading mode.</li>
+                <li>On the right-hand side of the main dashboard page, halfway down, regenerate your API keys. They will be for Live Trading if you are in Live Trading mode, or Paper Trading, if you are in Paper Trading mode.</li>
                 <li>Copy the keys into the places in the script where it says to configure API_KEY and SECRET_KEY.</li>
-                <li>Check the PAPER setting in the script is set to match your if API keys are for Paper Trading or Live Trading. By default the PAPER variable is False, for Live Trading mode (with real money),
-                  not Paper Trading (with fake money).</li>
+                <li>Check the PAPER setting in the script is set to match your if API keys are for Paper Trading or Live Trading. By default, the PAPER variable is False, the default is for Live Trading mode (with real money),
+                  for Paper Trading mode (with fake money) change this to True.</li>
                 <li>Save the script below into a file called something like "finance_script.py". When we run the code later, we will use this name.</li>
                 <li>Open a terminal window with python installed, and run this:
                   <div class="code-snippet"><pre><code>pip install requests alpaca-py</pre></code></div></li>
-                <li>Use the command below to run the script, and make sure it stays running the enitre time that you want your portfolio rebalanced automatically according to the ticker weights 
+                <li>Use the command below to run the script, and make sure it stays running the entire time that you want your portfolio rebalanced automatically according to the ticker weights 
                   provided here. It will print a line every two minutes saying the market is closed when the market is closed.
                   <div class="code-snippet"><pre><code>python3 finance_script.py</pre></code></div>
                 </li>
                 <li>Once you get to the point of withdrawing your funds again, you might want to know the following things:
                   <ul>
-                    <li>Once you have stopped the script you need to manually liquidate the stocks you have invested in. You can do this using the little (X) button on the right hand side of the Position section of the Dashboard.
+                    <li>Once you have stopped the script you need to manually liquidate the stocks you have invested in. You can do this using the little (X) button on the right-hand side of the Position section of the Dashboard.
                     <li>You will often have to wait for the regular market opening hours to sell the stock.</li>
                     <li>There is a waiting time for a stock sale to settle once you have sold it, before it can be withdrawn.</li>
                     <li>Then there is sometimes a waiting time for withdrawals to clear into your bank as well.</li>
-                    <li>Withdrawing Bitcoin can be faster, once your address is already added and cleared. You can do this by buying the BTC/USD ticker, you can then action a Bitcoin withdrawal using the left hand 
+                    <li>Withdrawing Bitcoin can be faster, once your address is already added and cleared. You can do this by buying the BTC/USD ticker, you can then action a Bitcoin withdrawal using the left-hand
                       menu under Funds & Wallet.</li>
                     <li>Adding a new bitcoin address requires a 24h Crypto withdrawals security hold.</li>
                     <li>You should plan for around 3+ days for making withdrawals, and you might need to check more than once.</li>
@@ -426,12 +426,12 @@ def homepage():
               </ol></p>
 
               <p><small>Running the ingestion script that provides the ticker weights here costs about $2.50 a day, you can donate; but only if it actually makes you feel better.
-                You are encourged to avoid donating if you aren't sure that you want to: <a href="https://circuspam.coffee/tips">Circuspam Tips</a>.</small></p>
+                You are encouraged to avoid donating if you aren't sure that you want to: <a href="https://circuspam.coffee/tips">Circuspam Tips</a>.</small></p>
 
               <h2>Consumer Script</h2>
               <p>
-                This script allows you to view and follow my personal investements yourself, in an automated way (subject to potential change, this is a test). It polls the API on this site,
-                and it submits market orders to rebalence your entire alpaca account balance using your own account keys that you add for the Alpaca Markets Trading API (which am unaffiliated with).
+                This script allows you to view and follow my personal investments yourself, in an automated way (subject to potential change, this is a test). It polls the API on this site,
+                and it submits market orders to rebalance your entire alpaca account balance using your own account keys that you add for the Alpaca Markets Trading API (which am unaffiliated with).
               </p>
             </div>
             <div class="code-wrap">
