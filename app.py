@@ -394,7 +394,7 @@ def homepage():
               <p>Please read fully before using this script.</p>
               <p><ol>
                 <li>Sign up for a "Trading API" account on <a href="https://alpaca.markets">Alpaca Markets</a>, and get your ID approved. This is a trading broker that will allow you to
-                  invest and control it using an API, with free sign up.</li>
+                  invest and then control your investment using an API, with free sign up.</li>
                 <li>Log in.</li>
                 <li>Select Live Trading, not Paper Trading, from the top left.</li>
                 <li>Deposit money, via Crypto or Bank Transfer. You will likely want ~$30 or more. You can add funds with the Funds & Wallet menu item which is on the left of the Alpaca website when in Live
