@@ -358,6 +358,7 @@ def homepage():
           <article class="card">
             <div class="card-head">
               <h2>Current targets</h2>
+              <p>Weights might not change while the market is closed.</p>
             </div>
             <div class="pad">
               <table>
