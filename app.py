@@ -400,7 +400,7 @@ def homepage():
                  <li>Done. Hopefully your balance will go up or down.</li>
               </ol></p>
 
-              <p><small>Running the ingestion script that provides the tickers costs about $2 a day, you can donate, but only if you actually would like to: <a href="https://circuspam.coffee/tips">Circuspam Tips</a>.</small></p>
+              <p><small>Running the ingestion script that provides the tickers costs about $2 a day, you can donate, but only if it actually makes you feel better, you are encourged to avoid it if you aren't sure: <a href="https://circuspam.coffee/tips">Circuspam Tips</a>.</small></p>
 
               <h2>Consumer script</h2>
               <p>
