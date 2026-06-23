@@ -315,8 +315,7 @@ def homepage():
           background: var(--code-bg);
           border: 1px solid var(--line);
           width: fit-content;
-          margin: 0.5em;
-          padding: 0.3em;
+          margin: 0.6em;
         }}
 
 
@@ -329,6 +328,10 @@ def homepage():
           line-height: 1.55;
           color: #1d2d21;
         }}
+
+        .code-snippet pre {
+          padding: 0.3em;
+        }
 
         code {{
           font-family: var(--mono);
