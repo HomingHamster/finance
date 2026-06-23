@@ -390,6 +390,7 @@ def homepage():
 
 
               <h2>How To Install</h2>
+              <p>Please read fully before using this script.</p>
               <p><ol>
                 <li>Open a terminal window with python installed, and run this:
                   <div class="code-snippet"><pre><code>pip install requests alpaca-py</pre></code></div></li>
@@ -403,8 +404,7 @@ def homepage():
                 <li>Copy the keys into the places in the script where it says to configure API_KEY and SECRET_KEY.</li>
                 <li>Check the PAPER setting is set to match your API keys. By default it is False for Live Trading mode (with real money).</li>
                 <li>Run the script, and make sure it stays running the enitre time that you want your portfolio rebalanced automatically according to these tickers. It will print a line every two minutes saying
-                  the market is closed when the market is closed. If you stop the script, you will need to decide if you want to manually liquidate your stocks to cash, otherwise they will remain invested in
-                  the companies that you were invested in when you stopped it.
+                  the market is closed when the market is closed.
                   <div class="code-snippet"><pre><code>python3 finance_script.py</pre></code></div>
                 </li>
                 <li>Once you get to the point of withdrawing your funds again, you might want to know the following things:
