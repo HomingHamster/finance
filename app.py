@@ -399,10 +399,11 @@ def homepage():
                 <li>Select Live Trading, not Paper Trading, from the top left.</li>
                 <li>Deposit money, via Crypto or Bank Transfer. You will likely want ~$30 or more. You can add funds with the Funds & Wallet menu item which is on the left of the Alpaca website when in Live
                   Trading mode. Remember there are fees for deposits, trades, and withdrawals.</li>
-                <li>On the right-hand side of the main dashboard page, halfway down, regenerate your API keys. They will be for Live Trading if you are in Live Trading mode, or Paper Trading, if you are in Paper Trading mode.</li>
+                <li>On the right-hand side of the main dashboard page, halfway down, regenerate your API keys. They will be for Live Trading if you are in Live Trading mode (with real money), or Paper Trading,
+                  if you are in Paper Trading mode (with fake money).</li>
                 <li>Copy the keys into the places in the script where it says to configure API_KEY and SECRET_KEY.</li>
-                <li>Check the PAPER setting in the script is set to match your if API keys are for Paper Trading or Live Trading. By default, the PAPER variable is False, the default is for Live Trading mode (with real money),
-                  for Paper Trading mode (with fake money) change this to True.</li>
+                <li>Check the PAPER setting in the script is set to match your if API keys are for Paper Trading or Live Trading. By default, the PAPER variable is False, the default is for Live Trading mode,
+                  for Paper Trading mode change this to True.</li>
                 <li>Save the script below into a file called something like "finance_script.py". When we run the code, we will use this name.</li>
                 <li>Open a terminal window with <a href="https://python.org">Python</a> already installed, and run the following <a href="https://pypi.org/project/pip/">pip</a> install command
                   (pip usually comes bundled with Python by default):
