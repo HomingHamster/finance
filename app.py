@@ -414,7 +414,9 @@ def homepage():
                     <li>Then there is sometimes a waiting time for withdrawals as well.
                     <li>Once you have stopped the script you need to manually liquidate the stocks you have invested in. You can do this using the little (X) button on the right hand side of the Position section of the Dashboard.
                     <li>You will usually have to wait to sell the stock when the market is open.</li>
-                    <li>Withdrawing bitcoin can be faster, once it has settled. You can buy BTCUSD and then you can action a Bitcoin withdrawal (which is sometimes immedate).
+                    <li>Withdrawing bitcoin can be faster, once it has settled. You can buy BTCUSD and then you can action a Bitcoin withdrawal (which is the quickest way, once you have an approved reusable 
+                      bitcoin address registered).</li>
+                    <li>Adding a new bitcoin address requires a 24h security hold.</li>
                     <li>You should plan for around 3+ days for withdrawals, and you might need to check more than once.</li>
                   </ul>
                 </li>
