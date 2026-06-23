@@ -315,7 +315,7 @@ def homepage():
           background: var(--code-bg);
           border: 1px solid var(--line);
           width: fit-content;
-          margin: 0.6em;
+          margin: 0.7em;
         }}
 
 
@@ -330,7 +330,7 @@ def homepage():
         }}
 
         .code-snippet pre {{
-          padding: 0.3em;
+          padding: 0.7em;
         }}
 
         code {{
