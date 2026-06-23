@@ -403,7 +403,7 @@ def homepage():
                 <li>On the right hand side of the main dashboard page, halfway down, regenerate your API keys. They will be for Live Trading if you are in Live Trading mode, or Paper Trading, if you are in Paper Trading mode.</li>
                 <li>Copy the keys into the places in the script where it says to configure API_KEY and SECRET_KEY.</li>
                 <li>Check the PAPER setting in the script is set to match your if API keys are for Paper Trading or Live Trading. By default the PAPER variable is False, for Live Trading mode (with real money),
-                  not Paper Trading with fake money.</li>
+                  not Paper Trading (with fake money).</li>
                 <li>Run the script, and make sure it stays running the enitre time that you want your portfolio rebalanced automatically according to these tickers. It will print a line every two minutes saying
                   the market is closed when the market is closed.
                   <div class="code-snippet"><pre><code>python3 finance_script.py</pre></code></div>
