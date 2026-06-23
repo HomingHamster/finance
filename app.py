@@ -345,10 +345,10 @@ def homepage():
           <div style="margin-bottom: 3em;" class="eyebrow">Test Project</div>
           <h1>Target weights example.</h1>
           <p style="margin-bottom: 2.3em;" class="lead">
-            A minimal homepage for viewing my current target weights and a compact consumer script that polls
-            <a class="api-link" href="/api">/api</a> and rebalances only when portfolio drift exceeds {drift:.2%}.
-            Later, this project will likely focus on green stocks and smaller businesses, but it does not at
-            the moment.
+            A minimal homepage for viewing my current target weights, and a compact consumer script that polls
+            this website's <a class="api-link" href="/api">/api</a> endpoint to rebalance when your portfolio
+            drift exceeds {drift:.2%}. Later, this project will likely focus on green stocks and smaller 
+            businesses, but it does not at the moment.
           </p>
           <div class="meta">
             <div class="pill">API route: /api</div>
