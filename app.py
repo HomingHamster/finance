@@ -363,7 +363,8 @@ def homepage():
           <article class="card">
             <div class="card-head">
               <h2>Current Target Weights</h2>
-              <p>These numbers are the ratio out of a total of 1 that would be in each stock. Weights might not change while the market is closed.</p>
+              <p>These numbers are the ratio out of a total of 1 that would be in each stock.</p>
+              <p>Weights might not change while the market is closed.</p>
             </div>
             <div class="pad">
               <table>
