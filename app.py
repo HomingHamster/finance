@@ -400,6 +400,8 @@ def homepage():
                  <li>Done. Hopefully your balance will go up or down.</li>
               </ol></p>
 
+              <p><small>Running the ingestion script that provides the tickers costs about $2 a day, you can donate, but only if you actually would like to: <a href="https://circuspam.coffee/tips">Circuspam Tips</a>.</small></p>
+
               <h2>Consumer script</h2>
               <p>
                 This script allows you to follow my investements yourself, in an automated way. It polls the API on this site, and submits market notional orders to your alpaca account using the account keys you add.
