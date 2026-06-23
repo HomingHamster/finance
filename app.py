@@ -390,24 +390,26 @@ def homepage():
               <p><ol>
                  <li>Open a terminal window with python installed, and run this:
                    <div class="code-snippet"><pre><code>pip install requests alpaca-py</pre></code></div></li>
-                 <li>Save the script below into a file called something like "finance_script.py". When we run the code later we will use this name.</li>
+                 <li>Save the script below into a file called something like "finance_script.py". When we run the code later, we will use this name.</li>
                  <li>Sign up for a "Trading API" account on <a href="https://alpaca.markets">Alpaca Markets</a>, and get your ID approved.</li>
                  <li>Log in.</li>
                  <li>Select Live Trading, not Paper Trading, from the top left.</li>
-                 <li>Deposit money, via Crypto or Bank Transfer. You will want $30 or more. You can do this with the Funds & Wallet menu item which is on the left when in Live Trading mode.</li>
-                 <li>On the right hand side of the main dashboard, halfway down, regenerate your API keys. They will be for Live Trading if you are in Live Trading mode, or Paper Trading, if you are in Paper Trading mode.</li>
-                 <li>Copy the keys into the places in the script where it says API_KEY and SECRET_KEY.</li>
-                 <li>Check the PAPER setting is set to match your API keys. By default it is False for Live Trading.</li>
-                 <li>Run the script and make sure it stays running. It will print a line every two minutes saying the market is closed when the market is closed.
+                 <li>Deposit money, via Crypto or Bank Transfer. You will likely want ~$30 or more. You can add funds with the Funds & Wallet menu item which is on the left of the Alpaca website when in Live Trading mode.</li>
+                 <li>On the right hand side of the main dashboard page, halfway down, regenerate your API keys. They will be for Live Trading if you are in Live Trading mode, or Paper Trading, if you are in Paper Trading mode.</li>
+                 <li>Copy the keys into the places in the script where it says to configure API_KEY and SECRET_KEY.</li>
+                 <li>Check the PAPER setting is set to match your API keys. By default it is False for Live Trading mode (with real money).</li>
+                 <li>Run the script, and make sure it stays running. It will print a line every two minutes saying the market is closed when the market is closed.
                    <div class="code-snippet"><pre><code>python3 finance_script.py</pre></code></div></li>
                  <li>Done. Hopefully your balance will go up or down.</li>
               </ol></p>
 
-              <p><small>Running the ingestion script that provides the tickers costs about $2 a day, you can donate, but only if it actually makes you feel better, you are encourged to avoid it if you aren't sure: <a href="https://circuspam.coffee/tips">Circuspam Tips</a>.</small></p>
+              <p><small>Running the ingestion script that provides the ticker weights here costs about $2.50 a day, you can donate; but only if it actually makes you feel better.
+                You are encourged to avoid donating if you aren't sure that you want to: <a href="https://circuspam.coffee/tips">Circuspam Tips</a>.</small></p>
 
               <h2>Consumer script</h2>
               <p>
-                This script allows you to follow my investements yourself, in an automated way. It polls the API on this site, and submits market notional orders to your alpaca account using the account keys you add.
+                This script allows you to view and follow my personal investements yourself, in an automated way (subject to potential change, this is a test). It polls the API on this site,
+                and it submits market orders to rebalence your entire alpaca account balance using your own account keys that you add for the Alpaca Markets Trading API (which am unaffiliated with).
               </p>
             </div>
             <div class="code-wrap">
