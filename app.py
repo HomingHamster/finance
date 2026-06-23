@@ -404,8 +404,8 @@ def homepage():
                 <li>Check the PAPER setting in the script is set to match your if API keys are for Paper Trading or Live Trading. By default, the PAPER variable is False, the default is for Live Trading mode (with real money),
                   for Paper Trading mode (with fake money) change this to True.</li>
                 <li>Save the script below into a file called something like "finance_script.py". When we run the code, we will use this name.</li>
-                <li>Open a terminal window with <a href="https://python.org">Python</a> installed, and run this command:
-                  <div class="code-snippet"><pre><code>pip install requests alpaca-py</pre></code></div></li>
+                <li>Open a terminal window with <a href="https://python.org">Python</a> installed, and run the following <a href="https://pypi.org/project/pip/">pip</a> install command 
+                  (pip usually comes bundled with Python by default): <div class="code-snippet"><pre><code>pip install requests alpaca-py</pre></code></div></li>
                 <li>Use this command below to run the script. You should make sure it stays running the entire time that you want your portfolio rebalanced automatically according to the ticker weights
                   provided on this site. When the market is closed the script will print a line to your terminal window every two minutes, saying the market is closed.
                   <div class="code-snippet"><pre><code>python3 finance_script.py</pre></code></div>
