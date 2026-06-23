@@ -417,11 +417,11 @@ def homepage():
                 <li>Once you get to the point of withdrawing your funds again, you might want to know the following things:
                   <ul>
                     <li>Once you have stopped the script you need to manually liquidate the stocks you have invested in. You can do this using the little (X) button on the right-hand side of the Position section of the Dashboard.
-                    <li>You will often have to wait for the regular market opening hours to sell the stock.</li>
-                    <li>There is a waiting time for a stock sale to settle once you have sold it, before it can be withdrawn.</li>
-                    <li>Then there is sometimes a waiting time for withdrawals to clear into your bank as well.</li>
+                    <li>You will often have to wait for the regular market opening hours to sell the stock(s). (You can sell during NASDAQ or NYSE opening hours on weekdays.)</li>
+                    <li>There is a waiting time for a stock sale to settle once you have sold it, before it can be withdrawn. (Often this is a 24h wait.)</li>
+                    <li>There is sometimes a waiting time for withdrawals to clear into your bank, as well. (This can be 2/3 days or more for bank transfers depending on the method used.)</li>
+                    <li>Withdrawing a supported Cryptocurrency can be faster, once your address is already added to Alpaca Markets and is cleared.</li>
                     <li>Adding a new Bitcoin address requires a 24h Crypto withdrawals security hold.</li>
-                    <li>Withdrawing a supported Cryptocurrency can be faster, once your address is already added and cleared.</li>
                     <li>You can withdraw Bitcoin by buying the BTC/USD ticker (not BTC), and then actioning a Bitcoin withdrawal using the left-hand Crypto Transfers menu item, under Funds & Wallet.</li>
                     <li>You should plan for around 3+ days for making any withdrawals, and you might need to check Alpaca Markets more than once to complete the withdrawal.</li>
                   </ul>
