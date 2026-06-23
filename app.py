@@ -394,7 +394,7 @@ def homepage():
               <p>Please read fully before using this script.</p>
               <p><ol>
                 <li>Sign up for a "Trading API" account on <a href="https://alpaca.markets">Alpaca Markets</a>, and get your ID approved. This is a trading broker that will allow you to
-                  invest and then control your investment using an API, with free sign up.</li>
+                  invest and then control your investment using an API. Registration is free.</li>
                 <li>Log in.</li>
                 <li>Select Live Trading mode (with real money), not Paper Trading mode (with fake money). Do this using the dropdown selector in the top left, so you can make a real cash deposit. You can
                   test how the script works using just Paper Trading mode if you want to.</li>
