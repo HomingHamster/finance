@@ -398,11 +398,11 @@ def homepage():
                 <li>Sign up for a "Trading API" account on <a href="https://alpaca.markets">Alpaca Markets</a>, and get your ID approved.</li>
                 <li>Log in.</li>
                 <li>Select Live Trading, not Paper Trading, from the top left.</li>
-                <li>Deposit money, via Crypto or Bank Transfer. You will likely want ~$30 or more. You can add funds with the Funds & Wallet menu item which is on the left of the Alpaca website when in Live 
+                <li>Deposit money, via Crypto or Bank Transfer. You will likely want ~$30 or more. You can add funds with the Funds & Wallet menu item which is on the left of the Alpaca website when in Live
                   Trading mode. Remember there are fees for deposits, trades, and withdrawals.</li>
                 <li>On the right hand side of the main dashboard page, halfway down, regenerate your API keys. They will be for Live Trading if you are in Live Trading mode, or Paper Trading, if you are in Paper Trading mode.</li>
                 <li>Copy the keys into the places in the script where it says to configure API_KEY and SECRET_KEY.</li>
-                <li>Check the PAPER setting is set to match your API keys. By default it is False for Live Trading mode (with real money).</li>
+                <li>Check the PAPER setting in the script is set to match your if API keys are for Paper Trading or Live Trading. By default the PAPER variable is False, for Live Trading mode (with real money).</li>
                 <li>Run the script, and make sure it stays running the enitre time that you want your portfolio rebalanced automatically according to these tickers. It will print a line every two minutes saying
                   the market is closed when the market is closed.
                   <div class="code-snippet"><pre><code>python3 finance_script.py</pre></code></div>
