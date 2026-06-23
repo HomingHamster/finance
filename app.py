@@ -420,10 +420,10 @@ def homepage():
                     <li>You will often have to wait for the regular market opening hours to sell the stock.</li>
                     <li>There is a waiting time for a stock sale to settle once you have sold it, before it can be withdrawn.</li>
                     <li>Then there is sometimes a waiting time for withdrawals to clear into your bank as well.</li>
-                    <li>Withdrawing Bitcoin (or any supported Cryptocurrency) can be faster, once your address is already added and cleared. You can do this by buying the BTC/USD ticker (not BTC). Once
-                      you have bought this ticker you can then action a Bitcoin withdrawal using the left-hand Crypto Transfers menu item, under Funds & Wallet.</li>
                     <li>Adding a new Bitcoin address requires a 24h Crypto withdrawals security hold.</li>
-                    <li>You should plan for around 3+ days for making withdrawals, and you might need to check more than once.</li>
+                    <li>Withdrawing a supported Cryptocurrency can be faster, once your address is already added and cleared.</li>
+                    <li>You can withdraw Bitcoin by buying the BTC/USD ticker (not BTC), and then actioning a Bitcoin withdrawal using the left-hand Crypto Transfers menu item, under Funds & Wallet.</li>
+                    <li>You should plan for around 3+ days for making any withdrawals, and you might need to check Alpaca Markets more than once to complete the withdrawal.</li>
                   </ul>
                 </li>
                 <li>Done. Hopefully your balance will go up or down.</li>
