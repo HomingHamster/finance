@@ -23,10 +23,12 @@ from alpaca.trading.client import TradingClient
 from alpaca.trading.requests import MarketOrderRequest
 from alpaca.trading.enums import OrderSide, TimeInForce
 
+# CONFIGURE THESE
 API_KEY = "YOUR_ALPACA_KEY"
 API_SECRET = "YOUR_ALPACA_SECRET"
 PAPER = False
 
+# PROBABLY LEAVE THESE ALONE
 TARGETS_URL = "http://finance-test.fellowship.monster/api"
 POLL_SECONDS = 120
 DRIFT_THRESHOLD = 0.02
