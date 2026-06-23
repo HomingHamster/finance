@@ -403,7 +403,7 @@ def homepage():
                 <li>Copy the keys into the places in the script where it says to configure API_KEY and SECRET_KEY.</li>
                 <li>Check the PAPER setting in the script is set to match your if API keys are for Paper Trading or Live Trading. By default, the PAPER variable is False, the default is for Live Trading mode (with real money),
                   for Paper Trading mode (with fake money) change this to True.</li>
-                <li>Save the script below into a file called something like "finance_script.py". When we run the code later, we will use this name.</li>
+                <li>Save the script below into a file called something like "finance_script.py". When we run the code, we will use this name.</li>
                 <li>Open a terminal window with python installed, and run this:
                   <div class="code-snippet"><pre><code>pip install requests alpaca-py</pre></code></div></li>
                 <li>Use the command below to run the script, and make sure it stays running the entire time that you want your portfolio rebalanced automatically according to the ticker weights 
