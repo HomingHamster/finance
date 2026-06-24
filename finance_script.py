@@ -6,9 +6,9 @@ from alpaca.trading.requests import MarketOrderRequest
 from alpaca.trading.enums import OrderSide, TimeInForce
 
 # CONFIGURE THESE
-API_KEY = "YOUR_ALPACA_KEY"
-API_SECRET = "YOUR_ALPACA_SECRET"
-PAPER = False
+API_KEY = "PK4OG4437BC77FEIJOQYZ74UCU"
+API_SECRET = "C72FWRfVgQ4iMtShnX7S9PLtFL7EouLuJY1V6pYvYe5c"
+PAPER = True
 
 # PROBABLY LEAVE THESE ALONE
 TARGETS_URL = "http://finance-test.fellowship.monster/api"
@@ -31,7 +31,10 @@ def get_equity_and_positions():
     equity = float(account.equity)
     positions = {}
     for p in client.get_all_positions():
-        positions[p.symbol] = float(p.market_value)
+        positions[p.symbol] = {
+            "market_value": float(p.market_value),
+            "qty": float(p.qty),
+        }
     return equity, positions
 
 
@@ -39,6 +42,16 @@ def submit_notional_order(symbol, side, notional):
     order = MarketOrderRequest(
         symbol=symbol,
         notional=round(notional, 2),
+        side=side,
+        time_in_force=TimeInForce.DAY,
+    )
+    return client.submit_order(order_data=order)
+
+
+def submit_qty_order(symbol, side, qty):
+    order = MarketOrderRequest(
+        symbol=symbol,
+        qty=qty,
         side=side,
         time_in_force=TimeInForce.DAY,
     )
@@ -53,7 +66,10 @@ def rebalance_once():
     target_symbols = set(target_weights)
 
     for symbol in sorted(current_symbols | target_symbols):
-        current_value = positions.get(symbol, 0.0)
+        position = positions.get(symbol, {})
+        current_value = position.get("market_value", 0.0)
+        current_qty = position.get("qty", 0.0)
+
         current_weight = current_value / equity if equity > 0 else 0.0
         target_weight = float(target_weights.get(symbol, 0.0))
         diff = target_weight - current_weight
@@ -62,13 +78,25 @@ def rebalance_once():
             continue
 
         notional = abs(diff) * equity
-        if notional < MIN_NOTIONAL:
+        if notional < MIN_NOTIONAL and not (target_weight <= 0.0 and current_qty > 0):
             continue
 
         side = OrderSide.BUY if diff > 0 else OrderSide.SELL
-        submit_notional_order(symbol, side, notional)
-        print(f"{side.value.upper():4} {symbol} ${notional:.2f} "
-              f"drift={diff:+.4f}")
+
+        if side == OrderSide.SELL and target_weight <= 0.0:
+            if current_qty <= 0:
+                continue
+            submit_qty_order(symbol, side, current_qty)
+            print(
+                f"{side.value.upper():4} {symbol} {current_qty} shares "
+                f"drift={diff:+.4f} full-liquidation"
+            )
+        else:
+            submit_notional_order(symbol, side, notional)
+            print(
+                f"{side.value.upper():4} {symbol} ${notional:.2f} "
+                f"drift={diff:+.4f}"
+            )
 
 
 if __name__ == "__main__":
