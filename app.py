@@ -426,14 +426,14 @@ def homepage():
                 <li>Sign up for a "Trading API" account on <a href="https://alpaca.markets">Alpaca Markets</a>, and get your ID approved. This is a trading broker that will allow you to
                   invest and then control your investment using an API. Registration is free.</li>
                 <li>Log in.</li>
-                <li>Select Live Trading mode (with real money), not Paper Trading mode (with fake money). Do this using the dropdown selector in the top left, so you can make a real cash deposit. You can
+                <li>Select Inidividual Trading mode (with real money), not Paper Trading mode (with fake money). Do this using the dropdown selector in the top left, so you can make a real cash deposit. You can
                   test how the script works using just Paper Trading mode if you want to.</li>
-                <li>Deposit money, via Crypto or Bank Transfer. You will likely want ~$30 or more. You can add funds with the Funds & Wallet menu item which is on the left of the Alpaca website when in Live
+                <li>Deposit money, via Crypto or Bank Transfer. You will likely want ~$30 or more. You can add funds with the Funds & Wallet menu item which is on the left of the Alpaca website when in Individual
                   Trading mode. Remember there are fees for deposits, trades, and withdrawals.</li>
-                <li>On the right-hand side of the main dashboard page, halfway down, regenerate your API keys. They will be generated for Live Trading if you are in Live Trading mode when you generate them,
+                <li>On the right-hand side of the main dashboard page, halfway down, regenerate your API keys. They will be generated for Individual Trading if you are in Individual Trading mode when you generate them,
                   or Paper Trading if you are in Paper Trading mode when you generate them.</li>
                 <li>Copy the keys into the places in the script where it says to configure API_KEY and SECRET_KEY.</li>
-                <li>Check the PAPER setting in the script is set to match your if API keys are for Paper Trading or Live Trading. By default, the PAPER variable is False, the default is for Live Trading mode,
+                <li>Check the PAPER setting in the script is set to match your if API keys are for Paper Trading or Individual Trading. By default, the PAPER variable is False, the default is for Individual Trading mode,
                   for Paper Trading mode change this to True.</li>
                 <li>Save the script below into a file called something like "finance_script.py". When we run the code, we will use this name.</li>
                 <li>Open a terminal window with <a href="https://python.org">Python</a> already installed, and run the following <a href="https://pypi.org/project/pip/">pip</a> install command
