@@ -430,10 +430,10 @@ def homepage():
                   Trading mode. Remember there are fees for deposits, trades, and withdrawals.</li>
                 <li>On the right-hand side of the main dashboard page, halfway down, regenerate your API keys. They will be generated for Individual Trading if you are in Individual Trading mode when you generate them,
                   or Paper Trading if you are in Paper Trading mode when you generate them.</li>
+                <li>Save the script below into a file called something like "finance_script.py". When we run the code, we will use this name.</li>
                 <li>Copy the keys into the places in the script where it says to configure API_KEY and SECRET_KEY.</li>
                 <li>Check the PAPER setting in the script is set to match your if API keys are for Paper Trading or Individual Trading. By default, the PAPER variable is False, the default is for Individual Trading mode,
                   for Paper Trading mode change this to True.</li>
-                <li>Save the script below into a file called something like "finance_script.py". When we run the code, we will use this name.</li>
                 <li>Open a terminal window with <a href="https://python.org">Python</a> already installed, and run the following <a href="https://pypi.org/project/pip/">pip</a> install command
                   (pip usually comes bundled with Python by default):
                   <div class="code-snippet"><pre><code>pip install requests alpaca-py</pre></code></div></li>
